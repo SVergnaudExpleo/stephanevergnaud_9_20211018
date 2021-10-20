@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import './styles.css'
 
 // main component //
+const toto = "Toto"
 class Name extends React.Component{
     constructor(props){
         super(props)
@@ -14,11 +15,17 @@ class Name extends React.Component{
     render() {
         return (
             <div className='name-box'>
-                <div className='bonjour'>
-                    Bonjour
+                <div className='hello-box'>
+                    <div className='hello'>
+                        Bonjour
+                    </div>
+                    <div className='name'>
+                        {toto}
+                    </div>
                 </div>
-                <div className='name'>
-                    {this.props.datas.filter()}
+
+                <div className='congratulation'>
+                    Félicitation ! Vous avez explosé vos objectifs hier 👏
                 </div>
             </div>
         )
@@ -26,8 +33,8 @@ class Name extends React.Component{
 }
 
 Name.propTypes = {
-    datas: PropTypes.array.isRequired,
-    id: PropTypes.number.isRequired,
+    datas: PropTypes.array,
+    id: PropTypes.number,
 }
 
 export default Name

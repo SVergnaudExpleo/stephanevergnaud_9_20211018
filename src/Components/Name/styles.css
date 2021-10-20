@@ -1,0 +1,24 @@
+.name-box{
+    display: grid;
+    row-gap: 41px;
+}
+.hello-box{
+    display: flex;
+    column-gap: 10px;
+}
+.hello{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 24px;
+}
+.name{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 24px;
+    color: #E60000;
+}
+
+.congratulation{
+    font-size: 18px;
+    line-height: 24px;
+}

@@ -1,0 +1,23 @@
+.dashboard-box{
+    display: grid;
+    grid-template-areas: 
+        "hello hello"
+        "bar calories"
+        "stat calories"
+    ;
+}
+.name-container{
+    grid-area: hello;
+    margin: 0 0 77px 0;
+}
+.barGraph-container{
+    grid-area: bar;
+    margin: 0 31px 28px 0;
+}
+.stat-container{
+    grid-area: stat;
+    margin: 0 31px 0 0;
+}
+.calories-container{
+    grid-area: calories;
+}

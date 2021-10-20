@@ -13,3 +13,6 @@ body{
     grid-area: side;
     width: fit-content;
 }
+.dashboard-container{
+    margin: 68px 90px 88px 109px;
+}

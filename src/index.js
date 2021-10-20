@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 // import preject component //
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
+import Dashboard from './Containers/dashboard';
 import './styles.css';
 
 // main component //
@@ -14,8 +15,8 @@ ReactDOM.render(
       <div className='sidebar-container'>
         <Sidebar />
       </div>
-      <div className='content'>
-        coucou
+      <div className='dashboard-container'>
+        <Dashboard />
       </div>
     </div>
   </React.StrictMode>,

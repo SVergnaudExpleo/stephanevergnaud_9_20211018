@@ -1,9 +1,9 @@
 .header-box{
     background-color: black;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 19px 0 15px 0;
+    padding: 19px 87px 15px 28px;
 }
 .header-logo{
     height: 57px;
