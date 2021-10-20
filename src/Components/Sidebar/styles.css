@@ -1,0 +1,29 @@
+.sidebar-box{
+    display: grid;
+    justify-items: center;
+    background-color: black;
+    width: min-content;
+    padding: 256px 26px 59px 26px;
+    row-gap: 164px;
+}
+.sideLogo-box{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    width: min-content;
+}
+.side-logo{
+    background-color: white;
+    padding: 16px;
+    border-radius: 6px;
+    width: 32px;
+}
+.side-text{
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    
+}

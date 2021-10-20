@@ -1,0 +1,15 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.content-container{
+    display: grid;
+    grid-template-areas: 
+        "side content"
+    ;
+    width: fit-content;
+}
+.sidebar-container{
+    grid-area: side;
+    width: fit-content;
+}

@@ -1,0 +1,16 @@
+.header-box{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 19px 0 15px 0;
+}
+.header-logo{
+    height: 57px;
+}
+.header-link{
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+}
