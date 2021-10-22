@@ -1,6 +1,5 @@
 // import react modules //
 import React from 'react'
-import PropTypes from 'prop-types'
 // import preject component //
 import './styles.css'
 import Name from '../../Components/Name'
@@ -31,10 +30,6 @@ class Dashboard extends React.Component{
             </div>
         )
     }
-}
-
-Dashboard.propTypes = {
-
 }
 
 export default Dashboard

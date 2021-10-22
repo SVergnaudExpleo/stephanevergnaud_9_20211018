@@ -1,6 +1,5 @@
 // import react modules //
 import React from 'react'
-import { Link } from 'react-router-dom'
 // import preject component //
 import './styles.css'
 import logo from '../../Assets/logo.svg'
