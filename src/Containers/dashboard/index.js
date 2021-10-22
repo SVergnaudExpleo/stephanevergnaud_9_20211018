@@ -4,20 +4,23 @@ import React from 'react'
 import './styles.css'
 import Name from '../../Components/Name'
 import userData from '../../ApiCall'
+import KeyData from '../KeyData'
 
 // main component //
 class Dashboard extends React.Component{
     constructor(props){
         super(props)
         this.state ={
-            firstNameState: "Toto"
+            firstNameState: "Toto",
+            keyDataState: {},
         }        
     }
 
     componentDidMount(){
         userData.getUser().then((res) =>{
             this.setState({
-                firstNameState: res.data.data.userInfos.firstName
+                firstNameState: res.data.data.userInfos.firstName,
+                keyDataState: res.data.data.keyData,
             })
         })
     }
@@ -36,7 +39,7 @@ class Dashboard extends React.Component{
                     stat
                 </div>
                 <div className='calories-container'>
-                    calories
+                    <KeyData keyDatas={this.state.keyDataState}/>
                 </div>
 
             </div>
