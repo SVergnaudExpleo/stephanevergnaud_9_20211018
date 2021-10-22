@@ -5,13 +5,7 @@ import PropTypes from 'prop-types'
 import './styles.css'
 
 // main component //
-const toto = "Toto"
 class Name extends React.Component{
-    constructor(props){
-        super(props)
-        this.state ={}
-    }
-
     render() {
         return (
             <div className='name-box'>
@@ -20,7 +14,7 @@ class Name extends React.Component{
                         Bonjour
                     </div>
                     <div className='name'>
-                        {toto}
+                        {this.props.firstName}
                     </div>
                 </div>
 
@@ -33,8 +27,7 @@ class Name extends React.Component{
 }
 
 Name.propTypes = {
-    datas: PropTypes.array,
-    id: PropTypes.number,
+    firstName: PropTypes.string.isRequired,
 }
 
 export default Name
