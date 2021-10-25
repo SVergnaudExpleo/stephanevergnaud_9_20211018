@@ -5,6 +5,8 @@ import './styles.css'
 import Name from '../../Components/Name'
 import userData from '../../ApiCall'
 import KeyData from '../KeyData'
+import ActivityChart from '../../Components/ActivityChart'
+import StatData from '../StatData'
 
 // main component //
 class Dashboard extends React.Component{
@@ -13,7 +15,10 @@ class Dashboard extends React.Component{
         this.state ={
             firstNameState: "Toto",
             keyDataState: {},
+            scoreDataState: {},
             activityDataState: {},
+            averageSessionDataState: {},
+            perfDataState: {},
         }        
     }
 
@@ -22,12 +27,22 @@ class Dashboard extends React.Component{
             this.setState({
                 firstNameState: res.data.data.userInfos.firstName,
                 keyDataState: res.data.data.keyData,
-                
+                scoreDataState: res.data.data.score,
             })
         })
         userData.getActivity().then((res1) =>{
             this.setState({
                 activityDataState: res1.data.data.sessions,
+            })
+        });
+        userData.getAverageSession().then((res2)=>{
+            this.setState({
+                averageSessionDataState: res2.data.data.sessions,
+            })
+        });
+        userData.getPerfData().then((res3)=>{
+            this.setState({
+                perfDataState: res3.data.data,
             })
         })
         
@@ -40,10 +55,10 @@ class Dashboard extends React.Component{
                     <Name firstName={this.state.firstNameState}/>
                 </div>
                 <div className='barGraph-container'>
-                    bar
+                    <ActivityChart datas={this.state.activityDataState} />
                 </div>
                 <div className='stat-container'>
-                    stat
+                    <StatData scoreDatas={this.state.scoreDataState} averageDatas={this.state.averageSessionDataState} perfDatas={this.state.perfDataState} />
                 </div>
                 <div className='calories-container'>
                     <KeyData keyDatas={this.state.keyDataState}/>
