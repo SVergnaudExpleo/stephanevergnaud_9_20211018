@@ -13,6 +13,7 @@ class Dashboard extends React.Component{
         this.state ={
             firstNameState: "Toto",
             keyDataState: {},
+            activityDataState: {},
         }        
     }
 
@@ -21,10 +22,16 @@ class Dashboard extends React.Component{
             this.setState({
                 firstNameState: res.data.data.userInfos.firstName,
                 keyDataState: res.data.data.keyData,
+                
             })
         })
+        userData.getActivity().then((res1) =>{
+            this.setState({
+                activityDataState: res1.data.data.sessions,
+            })
+        })
+        
     }
-
 
     render() {
         return (
