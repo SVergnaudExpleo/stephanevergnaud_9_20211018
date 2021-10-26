@@ -1,0 +1,42 @@
+/* legend style */
+.actiLegend-box{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #74798C;
+    display: flex;
+    margin: 0 0 30px 0;
+}
+.legend-title{
+    width: 100%;
+}
+.masse-box{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 8px auto;
+    column-gap: 10px;
+}
+.masse{
+    width: max-content;
+    margin: 0 32px 0 0 ;
+}
+.calo-box{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 8px auto;
+    column-gap: 12px;
+}
+.calo{
+    width: max-content;
+}
+.circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.circle-black{
+    background-color: #282D30;
+}
+.circle-red{
+    background-color: #E60000;
+}

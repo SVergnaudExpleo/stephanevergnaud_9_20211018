@@ -9,10 +9,13 @@ import {
     YAxis,
     CartesianGrid,
     Tooltip,
-    Legend
-  } from "recharts";
+    Legend,
+} from "recharts";
 // import preject component //
 import './styles.css'
+import ActivityLegend from './Legend';
+
+
 
 // main component //
 class ActivityChart extends React.Component{
@@ -23,27 +26,23 @@ class ActivityChart extends React.Component{
 
     render() {
         return (
-            <div>
-                <BarChart
-                    width={835}
-                    height={320}
-                    data={this.props.datas}
-                    margin={{
-                        top: 5,
-                        right: 5,
-                        left: 5,
-                        bottom: 5
-                    }}
-                >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="day" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="kilogram" fill="#282D30"/>
-                    <Bar dataKey="calories" fill="#E60000" />
-                </BarChart>
-            </div>
+            <BarChart
+                width={835}
+                height={320}
+                data={this.props.datas}
+                barCategoryGap={5}
+                margin={{ top: 0, right: 0, left: 0, bottom: 0}}
+            >
+                <CartesianGrid strokeDasharray="0 3 5" />
+                <Legend content={<ActivityLegend />} verticalAlign="top" />
+                <XAxis />
+                <YAxis />
+                <Tooltip />
+                
+                <Bar dataKey="kilogram" fill="#282D30" barSize={7} />
+                <Bar dataKey="calories" fill="#E60000" barSize={7} />
+            </BarChart>
+
         )
     }
 }
