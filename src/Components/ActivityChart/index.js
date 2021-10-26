@@ -14,6 +14,7 @@ import {
 // import preject component //
 import './styles.css'
 import ActivityLegend from './Legend';
+import ActivityTooltip from './Toltip';
 
 
 
@@ -35,9 +36,12 @@ class ActivityChart extends React.Component{
             >
                 <CartesianGrid strokeDasharray="0 3 5" />
                 <Legend content={<ActivityLegend />} verticalAlign="top" />
+                <Tooltip content={<ActivityTooltip />} />
+                
+                
                 <XAxis />
                 <YAxis />
-                <Tooltip />
+                
                 
                 <Bar dataKey="kilogram" fill="#282D30" barSize={7} />
                 <Bar dataKey="calories" fill="#E60000" barSize={7} />
