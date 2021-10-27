@@ -14,10 +14,15 @@ class Dashboard extends React.Component{
         super(props)
         this.state ={
             firstNameState: "Toto",
-            keyDataState: {},
-            scoreDataState: {},
-            activityDataState: {},
-            averageSessionDataState: {},
+            keyDataState: {
+                calorieCount: 0,
+                proteinCount: 0,
+                carbohydrateCount: 0,
+                lipidCount: 0,
+            },
+            scoreDataState: 1,
+            activityDataState: [],
+            averageSessionDataState: [],
             perfDataState: {},
         }        
     }
@@ -45,7 +50,6 @@ class Dashboard extends React.Component{
                 perfDataState: res3.data.data,
             })
         })
-        
     }
 
     render() {
@@ -63,7 +67,6 @@ class Dashboard extends React.Component{
                 <div className='calories-container'>
                     <KeyData keyDatas={this.state.keyDataState}/>
                 </div>
-
             </div>
         )
     }

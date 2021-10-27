@@ -42,3 +42,14 @@
 .circle-red{
     background-color: #E60000;
 }
+/* tooltip style */
+
+.tooltip-box{
+    background-color: #E60000;
+    color: white;
+    font-weight: 500;
+    font-size: 7px;
+    line-height: 24px;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+}

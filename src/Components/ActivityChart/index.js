@@ -15,36 +15,32 @@ import {
 import './styles.css'
 import ActivityLegend from './Legend';
 import ActivityTooltip from './Toltip';
-
-
+import TickActivity from './Tick';
 
 // main component //
 class ActivityChart extends React.Component{
-    constructor(props){
-        super(props)
-        this.state ={}
-    }
-
     render() {
         return (
             <BarChart
                 width={835}
                 height={320}
                 data={this.props.datas}
-                barCategoryGap={5}
                 margin={{ top: 0, right: 0, left: 0, bottom: 0}}
             >
-                <CartesianGrid strokeDasharray="0 3 5" />
+                <CartesianGrid strokeDasharray="3" vertical={false} />
                 <Legend content={<ActivityLegend />} verticalAlign="top" />
                 <Tooltip content={<ActivityTooltip />} />
                 
                 
-                <XAxis />
-                <YAxis />
+                <XAxis  
+                    axisLine={false}
+                    tick={<TickActivity/>}
+                />
+                <YAxis dataKey="kilogram" yAxisId={1} orientation="right" axisLine={false} />
+                <YAxis dataKey="calories" yAxisId={2} hide={true} />
                 
-                
-                <Bar dataKey="kilogram" fill="#282D30" barSize={7} />
-                <Bar dataKey="calories" fill="#E60000" barSize={7} />
+                <Bar dataKey="kilogram" fill="#282D30" barSize={7} yAxisId={1} />
+                <Bar dataKey="calories" fill="#E60000" barSize={7} yAxisId={2} />
             </BarChart>
 
         )
@@ -52,7 +48,7 @@ class ActivityChart extends React.Component{
 }
 
 ActivityChart.propTypes = {
-    datas: PropTypes.object.isRequired,
+    datas: PropTypes.array.isRequired,
 }
 
 export default ActivityChart

@@ -19,9 +19,9 @@ class StatData extends React.Component{
 }
 
 StatData.propTypes = {
-    averageDatas: PropTypes.object.isRequired,
+    averageDatas: PropTypes.array.isRequired,
     perfDatas: PropTypes.object.isRequired,
-    scoreDatas: PropTypes.object.isRequired,
+    scoreDatas: PropTypes.number.isRequired,
 }
 
 export default StatData

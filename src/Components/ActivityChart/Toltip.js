@@ -5,18 +5,18 @@ import './styles.css'
 
 // main component //
 class ActivityTooltip extends React.Component{
-    constructor(props){
-        super(props)
-        this.state ={}
-    }
-
     render() {
-        return (
-            <div className="tooltip-box">
-                COUCOU
-                {/* {console.log(this.props.payload)} */}
-            </div>
-        )
+        if(this.props.payload.length > 0 && this.props.payload !== undefined && this.props.payload !== null && this.props.active === true){
+            return (
+                <div className="tooltip-box">
+                    <div>{this.props.payload[0].payload.kilogram}kg</div>
+                    <div>{this.props.payload[0].payload.calories}Kcal</div>
+                </div>
+            )
+        } else {
+            return null
+        }
+        
     }
 }
 

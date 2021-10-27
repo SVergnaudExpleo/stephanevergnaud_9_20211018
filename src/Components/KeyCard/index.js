@@ -20,7 +20,7 @@ class KeyCard extends React.Component{
 }
 
 KeyCard.propTypes = {
-    data: PropTypes.number.isRequired,
+    data: PropTypes.any.isRequired,
     text: PropTypes.string.isRequired,
     unit: PropTypes.string.isRequired,
     logo: PropTypes.string.isRequired,

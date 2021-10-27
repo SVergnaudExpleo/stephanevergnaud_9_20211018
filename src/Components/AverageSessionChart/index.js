@@ -9,17 +9,12 @@ import {
     YAxis,
     CartesianGrid,
     Tooltip
-  } from "recharts";
+} from "recharts";
 // import preject component //
 import './styles.css'
 
 // main component //
 class AverageSessionChart extends React.Component{
-    constructor(props){
-        super(props)
-        this.state ={}
-    }
-
     render() {
         return (
             <AreaChart
@@ -44,7 +39,7 @@ class AverageSessionChart extends React.Component{
 }
 
 AverageSessionChart.propTypes = {
-    averageDatas: PropTypes.object.isRequired,
+    averageDatas: PropTypes.any.isRequired,
 }
 
 export default AverageSessionChart
