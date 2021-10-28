@@ -1,0 +1,22 @@
+.areachart-box{
+    position: relative;
+    display: grid;
+    width: min-content;
+}
+.color{
+    background-color: #ff00005b;
+    width: 36px;
+    height: 263px;
+    position: absolute;
+    z-index: 0;
+    align-self: flex-end;
+    justify-self: end;
+}
+/* tooltip style */
+.tipAverage-box{
+    background-color: white;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 24px;
+    padding: 10px 7px 10px 7px ;
+}

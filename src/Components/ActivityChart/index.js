@@ -30,17 +30,36 @@ class ActivityChart extends React.Component{
                 <CartesianGrid strokeDasharray="3" vertical={false} />
                 <Legend content={<ActivityLegend />} verticalAlign="top" />
                 <Tooltip content={<ActivityTooltip />} />
-                
-                
                 <XAxis  
                     axisLine={false}
                     tick={<TickActivity/>}
                 />
-                <YAxis dataKey="kilogram" yAxisId={1} orientation="right" axisLine={false} />
-                <YAxis dataKey="calories" yAxisId={2} hide={true} />
+                <YAxis 
+                    dataKey="kilogram" 
+                    yAxisId={1} 
+                    orientation="right" 
+                    axisLine={false} 
+                />
+                <YAxis 
+                    dataKey="calories" 
+                    yAxisId={2} 
+                    hide={true} 
+                />
                 
-                <Bar dataKey="kilogram" fill="#282D30" barSize={7} yAxisId={1} />
-                <Bar dataKey="calories" fill="#E60000" barSize={7} yAxisId={2} />
+                <Bar 
+                    dataKey="kilogram"
+                    fill="#282D30"
+                    barSize={7} 
+                    yAxisId={1}
+                    radius={[3,3,0,0]}
+                />
+                <Bar 
+                    dataKey="calories"
+                    fill="#E60000"
+                    barSize={7}
+                    yAxisId={2}
+                    radius={[3,3,0,0]}
+                />
             </BarChart>
 
         )

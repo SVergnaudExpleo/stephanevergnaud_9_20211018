@@ -62,7 +62,11 @@ class Dashboard extends React.Component{
                     <ActivityChart datas={this.state.activityDataState} />
                 </div>
                 <div className='stat-container'>
-                    <StatData scoreDatas={this.state.scoreDataState} averageDatas={this.state.averageSessionDataState} perfDatas={this.state.perfDataState} />
+                    <StatData 
+                        scoreDatas={this.state.scoreDataState} 
+                        averageDatas={this.state.averageSessionDataState} 
+                        perfDatas={this.state.perfDataState}
+                    />
                 </div>
                 <div className='calories-container'>
                     <KeyData keyDatas={this.state.keyDataState}/>

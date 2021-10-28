@@ -4,26 +4,21 @@ import React from 'react'
 import './styles.css'
 
 // main component //
-class TickActivity extends React.Component{
-    constructor(props){
-        super(props)
-        this.state ={}
-    }
-
+class TickAverage extends React.Component{
     render() {
+        const day = ["L","M","M","J","V","S","D"]
         const { x, y, payload } = this.props;
-        let test = payload.value + 1
+        let val = payload.value -1
         return (
             <g transform={`translate(${x},${y})`}>
-                <text 
-                    x={-5} y={0} dy={20} 
-                    fill="#9B9EAC"
+                <text
+                    x={0} y={0} dy={-20} dx={0}
                 >
-                    {test}
+                    {day[val]}
                 </text>
             </g>
         );
     }
 }
 
-export default TickActivity
+export default TickAverage
