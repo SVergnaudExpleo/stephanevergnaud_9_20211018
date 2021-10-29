@@ -12,7 +12,7 @@ class TickAverage extends React.Component{
         return (
             <g transform={`translate(${x},${y})`}>
                 <text
-                    x={0} y={0} dy={-20} dx={0}
+                    x={0} y={0} dy={0} dx={-5}
                 >
                     {day[val]}
                 </text>

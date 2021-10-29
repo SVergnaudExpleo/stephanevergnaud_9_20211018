@@ -2,15 +2,27 @@
     position: relative;
     display: grid;
     width: min-content;
+    
 }
 .color{
-    background-color: #ff00005b;
-    width: 36px;
+    background-color: #e60000;
+    width: 42px;
     height: 263px;
     position: absolute;
-    z-index: 0;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
     align-self: flex-end;
     justify-self: end;
+}
+.lineDraw-box{
+    position: absolute;
+    z-index: 3;
+}
+.areaDraw-box{
+    background: #ff0000;
+    position: relative;
+    z-index: 1;
 }
 /* tooltip style */
 .tipAverage-box{

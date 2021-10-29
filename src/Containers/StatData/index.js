@@ -12,7 +12,7 @@ class StatData extends React.Component{
         return (
             <div className="statData-box">
                 <AverageSessionChart averageDatas={this.props.averageDatas} />
-                <PerfChart perfDatas={this.props.perfDatas} />
+                {/* <PerfChart perfDatas={this.props.perfDatas} /> */}
             </div>
         )
     }
