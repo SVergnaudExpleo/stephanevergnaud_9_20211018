@@ -5,11 +5,6 @@ import './styles.css'
 
 // main component //
 class TickActivity extends React.Component{
-    constructor(props){
-        super(props)
-        this.state ={}
-    }
-
     render() {
         const { x, y, payload } = this.props;
         let test = payload.value + 1

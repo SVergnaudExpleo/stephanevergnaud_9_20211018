@@ -1,8 +1,8 @@
 import axios from "axios"
 
 // Make a request for a user with a given ID
-const selectUserId = 18
-const selectApiPort = 8080
+const selectUserId = 12
+const selectApiPort = 3000
 
 class UserData {
     getUser(){

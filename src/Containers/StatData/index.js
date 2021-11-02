@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import './styles.css'
 import AverageSessionChart from '../../Components/AverageSessionChart'
 import PerfChart from '../../Components/PerformanceChart'
+import ScoreChart from '../../Components/ScoreChart'
 
 // main component //
 class StatData extends React.Component{
@@ -12,7 +13,8 @@ class StatData extends React.Component{
         return (
             <div className="statData-box">
                 <AverageSessionChart averageDatas={this.props.averageDatas} />
-                {/* <PerfChart perfDatas={this.props.perfDatas} /> */}
+                <PerfChart perfDatas={this.props.perfDatas} />
+                <ScoreChart scoreDatas={this.props.scoreDatas} />
             </div>
         )
     }
@@ -21,7 +23,7 @@ class StatData extends React.Component{
 StatData.propTypes = {
     averageDatas: PropTypes.array.isRequired,
     perfDatas: PropTypes.object.isRequired,
-    scoreDatas: PropTypes.number.isRequired,
+    scoreDatas: PropTypes.array.isRequired,
 }
 
 export default StatData

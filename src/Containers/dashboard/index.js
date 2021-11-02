@@ -20,7 +20,7 @@ class Dashboard extends React.Component{
                 carbohydrateCount: 0,
                 lipidCount: 0,
             },
-            scoreDataState: 1,
+            scoreDataState: [],
             activityDataState: [],
             averageSessionDataState: [],
             perfDataState: {},
@@ -29,10 +29,22 @@ class Dashboard extends React.Component{
 
     componentDidMount(){
         userData.getUser().then((res) =>{
+            let val = 0
+            if (res.data.data.score !== undefined) {
+                val = [{
+                    name: "a",
+                    score: res.data.data.score,
+                }]
+            } else if (res.data.data.todayScore !== undefined) {
+                val = [{
+                    name: "a",
+                    score: res.data.data.todayScore,
+                }]
+            }
             this.setState({
                 firstNameState: res.data.data.userInfos.firstName,
                 keyDataState: res.data.data.keyData,
-                scoreDataState: res.data.data.score,
+                scoreDataState: val,
             })
         })
         userData.getActivity().then((res1) =>{
