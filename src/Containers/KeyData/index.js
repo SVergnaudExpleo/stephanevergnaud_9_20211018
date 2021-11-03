@@ -14,10 +14,33 @@ class KeyData extends React.Component{
     render() {
         return (
             <div className='data-box'>
-                <KeyCard data={this.props.keyDatas.calorieCount} text={"Calories"} unit={"kCal"} logo={calorieLogo} bgColor={"rgba(255, 0, 0, 0.07)"} />
-                <KeyCard data={this.props.keyDatas.proteinCount} text={"Proteines"} unit={"g"} logo={protLogo} bgColor={"rgba(74, 184, 255, 0.1)"} />
-                <KeyCard data={this.props.keyDatas.carbohydrateCount} text={"Glucides"} unit={"g"} logo={gluLogo} bgColor={"rgba(249, 206, 35, 0.1)"} />
-                <KeyCard data={this.props.keyDatas.lipidCount} text={"Lipides"} unit={"g"} logo={lipLogo} bgColor={"rgba(253, 81, 129, 0.1)"} />
+                <KeyCard 
+                    data={this.props.keyDatas.calorieCount} 
+                    text={"Calories"} unit={"kCal"} 
+                    logo={calorieLogo} 
+                    bgColor={"rgba(255, 0, 0, 0.07)"} 
+                />
+                <KeyCard 
+                    data={this.props.keyDatas.proteinCount} 
+                    text={"Proteines"} 
+                    unit={"g"} 
+                    logo={protLogo} 
+                    bgColor={"rgba(74, 184, 255, 0.1)"} 
+                />
+                <KeyCard 
+                    data={this.props.keyDatas.carbohydrateCount} 
+                    text={"Glucides"} 
+                    unit={"g"} 
+                    logo={gluLogo} 
+                    bgColor={"rgba(249, 206, 35, 0.1)"} 
+                />
+                <KeyCard 
+                    data={this.props.keyDatas.lipidCount} 
+                    text={"Lipides"} 
+                    unit={"g"} 
+                    logo={lipLogo} 
+                    bgColor={"rgba(253, 81, 129, 0.1)"} 
+                />
             </div>
         )
     }

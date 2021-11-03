@@ -7,6 +7,7 @@ import {
     RadarChart,
     PolarGrid,
     PolarAngleAxis,
+    ResponsiveContainer,
   } from "recharts";
 // import preject component //
 import './styles.css'
@@ -16,22 +17,21 @@ class PerfChart extends React.Component{
     render() {
         return (
             <div className="perfChart-box">
-                <RadarChart
-                    outerRadius={100}
-                    width={258}
-                    height={263}
-                    data={this.props.perfDatas.data}
-                    
-                >
-                    <PolarGrid />
-                    <PolarAngleAxis dataKey="kind" axisLine={false} />
-                    <Radar
-                        name="Mike"
-                        dataKey="kind"
-                        fill="#FF0101B2"
-                        fillOpacity={0.7}
-                    />
-                </RadarChart>
+                <ResponsiveContainer height={263}>
+                    <RadarChart
+                        outerRadius={100}
+                        data={this.props.perfDatas.data}
+                    >
+                        <PolarGrid />
+                        <PolarAngleAxis dataKey="kind" axisLine={false} />
+                        <Radar
+                            name="Mike"
+                            dataKey="kind"
+                            fill="#FF0101B2"
+                            fillOpacity={0.7}
+                        />
+                    </RadarChart>
+                </ResponsiveContainer>
             </div>
         )
     }
