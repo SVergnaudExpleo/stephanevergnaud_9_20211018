@@ -15,18 +15,34 @@ import './styles.css'
 // main component //
 class PerfChart extends React.Component{
     render() {
+        let kindObject = this.props.perfDatas.kind
+        let dataArray = this.props.perfDatas.data
+        let arrayDatas = []
+        
+        if (dataArray!==undefined && kindObject!==undefined) {
+            this.props.perfDatas.data.forEach(el => {
+                let newData = {
+                    value: el.value,
+                    kind: kindObject[el.kind]
+                }
+                arrayDatas.push(newData)
+            });
+        }
+
         return (
             <div className="perfChart-box">
                 <ResponsiveContainer height={263}>
                     <RadarChart
-                        outerRadius={100}
-                        data={this.props.perfDatas.data}
+                        data={arrayDatas}
+                        fill="white"
                     >
                         <PolarGrid />
-                        <PolarAngleAxis dataKey="kind" axisLine={false} />
+                        <PolarAngleAxis 
+                            dataKey="kind" 
+                            axisLine={false} 
+                        />
                         <Radar
-                            name="Mike"
-                            dataKey="kind"
+                            dataKey="value"
                             fill="#FF0101B2"
                             fillOpacity={0.7}
                         />

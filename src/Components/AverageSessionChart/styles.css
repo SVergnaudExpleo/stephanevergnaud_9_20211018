@@ -1,8 +1,7 @@
 .areachart-box{
     position: relative;
     display: grid;
-    width: min-content;
-    
+    /* width: min-content; */
 }
 .color{
     background-color: #e60000;
@@ -31,4 +30,12 @@
     font-size: 8px;
     line-height: 24px;
     padding: 10px 7px 10px 7px ;
+}
+/* legend style */
+.averLegend-box{
+    color: black;
+    width: 147px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
