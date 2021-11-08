@@ -1,13 +1,16 @@
-// import react modules //
+/**
+ * Tick for activity chart
+*/
+
 import React from 'react';
-// import preject component //
 import './styles.css';
 
-// main component //
 class TickActivity extends React.Component{
     render() {
         const { x, y, payload } = this.props;
+
         let pVal = payload.value + 1;
+
         return (
             <g transform={`translate(${x},${y})`}>
                 <text 
@@ -18,7 +21,7 @@ class TickActivity extends React.Component{
                 </text>
             </g>
         );
-    }
-}
+    };
+};
 
-export default TickActivity
+export default TickActivity;

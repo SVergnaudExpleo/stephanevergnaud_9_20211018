@@ -1,7 +1,10 @@
+/**
+* Styles for all components related to average session chart
+*/
+
 .average-box{
     background: rgb(255, 25, 25);
 }
-/* tooltip style */
 .tipAverage-box{
     background-color: white;
     font-weight: 500;
@@ -9,7 +12,6 @@
     line-height: 24px;
     padding: 10px 7px 10px 7px ;
 }
-/* legend style */
 .averLegend-box{
     color: white;
     width: 147px;

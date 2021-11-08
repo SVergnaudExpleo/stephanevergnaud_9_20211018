@@ -1,13 +1,16 @@
-// import react modules //
+/**
+ * Main page for the project
+ * 
+ * @author Stéphane
+ * @version 0.1
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import preject component //
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 import Dashboard from './Containers/dashboard';
 import './styles.css';
 
-// main component //
 ReactDOM.render(
   <React.StrictMode>
     <Header />

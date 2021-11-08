@@ -1,10 +1,14 @@
-// import react modules //
+/**
+ * This React component show the user name
+ * 
+ * @param this React component need firstName props as string
+ * @author Stéphane
+ * @version 0.1
+ */
 import React from 'react';
 import PropTypes from 'prop-types';
-// import preject component //
 import './styles.css';
 
-// main component //
 class Name extends React.Component{
     render() {
         return (

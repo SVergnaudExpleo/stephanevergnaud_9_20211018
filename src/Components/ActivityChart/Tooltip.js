@@ -1,9 +1,9 @@
-// import react modules //
+/**
+ * Tool tip activate on mouse over for activity chart
+ */
 import React from 'react';
-// import preject component //
 import './styles.css';
 
-// main component //
 class ActivityTooltip extends React.Component{
     render() {
         if (this.props.payload === null) {

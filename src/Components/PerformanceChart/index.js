@@ -1,7 +1,13 @@
-// import react modules //
+/**
+ * This React component show the user performance in a radar chart
+ * 
+ * @param this React component need perfDatas props as array
+ * @author Stéphane
+ * @version 0.1
+ */
+
 import React from 'react';
 import PropTypes from 'prop-types';
-// import chart modules //
 import {
     Radar,
     RadarChart,
@@ -9,10 +15,8 @@ import {
     PolarAngleAxis,
     ResponsiveContainer,
   } from "recharts";
-// import preject component //
 import './styles.css';
 
-// main component //
 class PerfChart extends React.Component{
     render() {
         let kindObject = this.props.perfDatas.kind;

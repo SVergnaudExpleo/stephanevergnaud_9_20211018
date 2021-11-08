@@ -1,10 +1,15 @@
-// import react modules //
+/**
+ * Header component of the page
+ * 
+ * @param no param needed
+ * @author Stéphane
+ * @version 0.1
+ */
+
 import React from 'react';
-// import preject component //
 import './styles.css';
 import logo from '../../Assets/logo.svg';
 
-// main component //
 class Header extends React.Component{
     render() {
         return (

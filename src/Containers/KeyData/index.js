@@ -1,7 +1,13 @@
-// import react modules //
+/**
+ * This React component create a grop of configurated KeyCard
+ * 
+ * @param This React component need keyDatas props as object
+ * @author Stéphane
+ * @version 0.1
+ */
+
 import React from 'react';
 import PropTypes from 'prop-types';
-// import preject component //
 import './styles.css';
 import KeyCard from '../../Components/KeyCard';
 import calorieLogo from '../../Assets/calories.svg';
@@ -9,7 +15,6 @@ import protLogo from '../../Assets/proteins.svg';
 import gluLogo from '../../Assets/apple.svg';
 import lipLogo from '../../Assets/cheeseburger.svg';
 
-// main component //
 class KeyData extends React.Component{
     render() {
         return (

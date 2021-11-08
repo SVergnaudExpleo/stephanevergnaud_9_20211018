@@ -1,4 +1,11 @@
-// import react modules //
+/**
+ * This react component show the user daily performance in a cicle chart
+ * 
+ * @param This React component need scoreDatas props as array
+ * @author Stéphane
+ * @version 0.1
+ */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -7,11 +14,9 @@ import {
     Legend,
     ResponsiveContainer,
 } from 'recharts';
-// import preject component //
 import './styles.css';
 import ScoreLegend from './Legend';
 
-// main component //
 class ScoreChart extends React.Component{
     render() {
         return (

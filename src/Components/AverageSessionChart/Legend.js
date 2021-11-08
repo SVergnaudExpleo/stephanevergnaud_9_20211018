@@ -1,9 +1,9 @@
-// import react modules //
+/**
+ * Legent of average session chart
+ */
 import React from 'react';
-// import preject component //
 import './styles.css';
 
-// main component //
 class AverageLegend extends React.Component{
     render() {
         return (

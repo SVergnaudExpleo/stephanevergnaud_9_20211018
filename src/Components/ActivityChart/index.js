@@ -1,7 +1,14 @@
-// import react modules //
+/**
+ * Show average activity of user in a bar chart
+ * 
+ * @param This React component need Datas props as array
+ * @author Stéphane
+ * @version 0.1
+ */
+
+// import librairy modules //
 import React from 'react'
 import PropTypes from 'prop-types'
-// import chart modules //
 import {
     BarChart,
     Bar,
@@ -12,13 +19,13 @@ import {
     Legend,
     ResponsiveContainer,
 } from "recharts";
-// import preject component //
+// Import preject component //
 import './styles.css'
 import ActivityLegend from './Legend';
-import ActivityTooltip from './Toltip';
+import ActivityTooltip from './Tooltip';
 import TickActivity from './Tick';
 
-// main component //
+// Main component //
 class ActivityChart extends React.Component{
     render() {
         return (
@@ -45,7 +52,6 @@ class ActivityChart extends React.Component{
                         yAxisId={2} 
                         hide={true} 
                     />
-                    
                     <Bar 
                         dataKey="kilogram"
                         fill="#282D30"
@@ -62,12 +68,12 @@ class ActivityChart extends React.Component{
                     />
                 </BarChart>
             </ResponsiveContainer>
-        )
-    }
-}
+        );
+    };
+};
 
 ActivityChart.propTypes = {
     datas: PropTypes.array.isRequired,
-}
+};
 
-export default ActivityChart
+export default ActivityChart;

@@ -1,7 +1,10 @@
+/*
+* Styles for all related component of score chart
+*/
+
 .score-box{
     position: relative;
 }
-/* legend style */
 .scoreLegend-box{
     height: 263px;
     display: grid;

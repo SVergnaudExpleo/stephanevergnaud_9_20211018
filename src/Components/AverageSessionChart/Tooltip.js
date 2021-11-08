@@ -1,9 +1,10 @@
-// import react modules //
+/**
+ * Tooltip activated on maouse over for average session chart
+ */
+
 import React from 'react';
-// import preject component //
 import './styles.css';
 
-// main component //
 class AverageTooltip extends React.Component{
     render() {
         if(this.props.payload.length > 0 && this.props.payload !== undefined && this.props.payload !== null && this.props.active === true){

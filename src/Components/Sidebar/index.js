@@ -1,13 +1,18 @@
-// import react modules //
+/**
+ * This React component show a side bar on the left of page
+ * 
+ * @param no params needed
+ * @author Stéphane
+ * @version 0.1
+ */
+
 import React from 'react';
-// import preject component //
 import './styles.css';
 import yoga from '../../Assets/yoga.svg';
 import swim from '../../Assets/swiming.svg';
 import cycle from '../../Assets/cycling.svg';
 import strength from '../../Assets/strength.svg';
 
-// main component //
 class Sidebar extends React.Component{
     render() {
         return (

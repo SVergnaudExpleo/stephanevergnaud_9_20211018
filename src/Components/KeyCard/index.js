@@ -1,10 +1,19 @@
-// import react modules //
+/**
+ * This React component create a card containing the user key data
+ * 
+ * @param This React component need data as props
+ * @param This React component need text props as string
+ * @param This React component need unit props as string
+ * @param This React component need logo props as string
+ * @param This React component need bgColor props as string
+ * @author Stéphane
+ * @version 0.1
+ */
+
 import React from 'react';
 import PropTypes from 'prop-types';
-// import preject component //
 import './styles.css';
 
-// main component //
 class KeyCard extends React.Component{   
     render() {
         return (
