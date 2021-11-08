@@ -17,7 +17,6 @@ class ActivityLegend extends React.Component{
                     <div className="circle circle-red"></div>
                     <div className="calo">Calories brulées (kCal)</div>
                 </div>
- 
             </div>
         )
     }

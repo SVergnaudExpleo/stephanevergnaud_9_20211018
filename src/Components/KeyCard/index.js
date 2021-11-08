@@ -1,8 +1,8 @@
 // import react modules //
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 // import preject component //
-import './styles.css'
+import './styles.css';
 
 // main component //
 class KeyCard extends React.Component{   
@@ -15,9 +15,9 @@ class KeyCard extends React.Component{
                     <div className='card-text'>{this.props.text}</div>
                 </div>
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
 KeyCard.propTypes = {
     data: PropTypes.any.isRequired,
@@ -25,6 +25,6 @@ KeyCard.propTypes = {
     unit: PropTypes.string.isRequired,
     logo: PropTypes.string.isRequired,
     bgColor: PropTypes.string.isRequired,
-}
+};
 
-export default KeyCard
+export default KeyCard;

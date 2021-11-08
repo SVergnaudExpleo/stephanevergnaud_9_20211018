@@ -1,6 +1,6 @@
 // import react modules //
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 // import chart modules //
 import {
     Radar,
@@ -10,14 +10,14 @@ import {
     ResponsiveContainer,
   } from "recharts";
 // import preject component //
-import './styles.css'
+import './styles.css';
 
 // main component //
 class PerfChart extends React.Component{
     render() {
-        let kindObject = this.props.perfDatas.kind
-        let dataArray = this.props.perfDatas.data
-        let arrayDatas = []
+        let kindObject = this.props.perfDatas.kind;
+        let dataArray = this.props.perfDatas.data;
+        let arrayDatas = [];
         
         if (dataArray!==undefined && kindObject!==undefined) {
             this.props.perfDatas.data.forEach(el => {
@@ -27,7 +27,7 @@ class PerfChart extends React.Component{
                 }
                 arrayDatas.push(newData)
             });
-        }
+        };
 
         return (
             <div className="perfChart-box">
@@ -49,12 +49,12 @@ class PerfChart extends React.Component{
                     </RadarChart>
                 </ResponsiveContainer>
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
 PerfChart.propTypes = {
     perfDatas: PropTypes.object.isRequired,
-}
+};
 
-export default PerfChart
+export default PerfChart;

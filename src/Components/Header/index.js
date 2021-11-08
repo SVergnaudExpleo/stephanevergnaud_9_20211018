@@ -1,8 +1,8 @@
 // import react modules //
-import React from 'react'
+import React from 'react';
 // import preject component //
-import './styles.css'
-import logo from '../../Assets/logo.svg'
+import './styles.css';
+import logo from '../../Assets/logo.svg';
 
 // main component //
 class Header extends React.Component{
@@ -15,8 +15,8 @@ class Header extends React.Component{
               <div className='header-link'> Réglage </div>
               <div className='header-link'> Communauté </div>
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
-export default Header
+export default Header;

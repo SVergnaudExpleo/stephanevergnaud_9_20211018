@@ -1,11 +1,11 @@
 // import react modules //
-import React from 'react'
+import React from 'react';
 // import preject component //
-import './styles.css'
-import yoga from '../../Assets/yoga.svg'
-import swim from '../../Assets/swiming.svg'
-import cycle from '../../Assets/cycling.svg'
-import strength from '../../Assets/strength.svg'
+import './styles.css';
+import yoga from '../../Assets/yoga.svg';
+import swim from '../../Assets/swiming.svg';
+import cycle from '../../Assets/cycling.svg';
+import strength from '../../Assets/strength.svg';
 
 // main component //
 class Sidebar extends React.Component{
@@ -22,8 +22,8 @@ class Sidebar extends React.Component{
                     Copiryght, SportSee 2021
                 </div>
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
-export default Sidebar
+export default Sidebar;

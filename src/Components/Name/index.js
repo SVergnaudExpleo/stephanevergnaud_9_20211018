@@ -1,8 +1,8 @@
 // import react modules //
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 // import preject component //
-import './styles.css'
+import './styles.css';
 
 // main component //
 class Name extends React.Component{
@@ -17,17 +17,16 @@ class Name extends React.Component{
                         {this.props.firstName}
                     </div>
                 </div>
-
                 <div className='congratulation'>
                     Félicitation ! Vous avez explosé vos objectifs hier 👏
                 </div>
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
 Name.propTypes = {
     firstName: PropTypes.string.isRequired,
-}
+};
 
-export default Name
+export default Name;

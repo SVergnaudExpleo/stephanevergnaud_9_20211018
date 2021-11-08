@@ -1,6 +1,6 @@
 // import react modules //
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 import {
     RadialBarChart,
     RadialBar,
@@ -8,7 +8,7 @@ import {
     ResponsiveContainer,
 } from 'recharts';
 // import preject component //
-import './styles.css'
+import './styles.css';
 import ScoreLegend from './Legend';
 
 // main component //
@@ -39,12 +39,12 @@ class ScoreChart extends React.Component{
                     </RadialBarChart>
                 </ResponsiveContainer>
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
 ScoreChart.propTypes = {
     scoreDatas: PropTypes.array.isRequired,
-}
+};
 
-export default ScoreChart
+export default ScoreChart;

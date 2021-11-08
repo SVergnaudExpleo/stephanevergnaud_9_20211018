@@ -1,7 +1,7 @@
 // import react modules //
-import React from 'react'
+import React from 'react';
 // import preject component //
-import './styles.css'
+import './styles.css';
 
 // main component //
 class AverageLegend extends React.Component{
@@ -10,8 +10,8 @@ class AverageLegend extends React.Component{
             <div className="averLegend-box">
                 Durée moyenne des sessions
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
-export default AverageLegend
+export default AverageLegend;

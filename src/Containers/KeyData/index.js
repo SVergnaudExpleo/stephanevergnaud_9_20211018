@@ -1,13 +1,13 @@
 // import react modules //
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 // import preject component //
-import './styles.css'
-import KeyCard from '../../Components/KeyCard'
-import calorieLogo from '../../Assets/calories.svg'
-import protLogo from '../../Assets/proteins.svg'
-import gluLogo from '../../Assets/apple.svg'
-import lipLogo from '../../Assets/cheeseburger.svg'
+import './styles.css';
+import KeyCard from '../../Components/KeyCard';
+import calorieLogo from '../../Assets/calories.svg';
+import protLogo from '../../Assets/proteins.svg';
+import gluLogo from '../../Assets/apple.svg';
+import lipLogo from '../../Assets/cheeseburger.svg';
 
 // main component //
 class KeyData extends React.Component{
@@ -42,12 +42,12 @@ class KeyData extends React.Component{
                     bgColor={"rgba(253, 81, 129, 0.1)"} 
                 />
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
 KeyData.propTypes = {
     keyDatas: PropTypes.object.isRequired,
-}
+};
 
-export default KeyData
+export default KeyData;

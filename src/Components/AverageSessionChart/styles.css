@@ -1,27 +1,5 @@
-.areachart-box{
-    position: relative;
-    display: grid;
-    /* width: min-content; */
-}
-.color{
-    background-color: #e60000;
-    width: 42px;
-    height: 263px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 2;
-    align-self: flex-end;
-    justify-self: end;
-}
-.lineDraw-box{
-    position: absolute;
-    z-index: 3;
-}
-.areaDraw-box{
-    background: #ff0000;
-    position: relative;
-    z-index: 1;
+.average-box{
+    background: rgb(255, 25, 25);
 }
 /* tooltip style */
 .tipAverage-box{
@@ -33,7 +11,7 @@
 }
 /* legend style */
 .averLegend-box{
-    color: black;
+    color: white;
     width: 147px;
     position: absolute;
     top: 20px;

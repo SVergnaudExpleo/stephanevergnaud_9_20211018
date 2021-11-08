@@ -1,7 +1,7 @@
 // import react modules //
-import React from 'react'
+import React from 'react';
 // import preject component //
-import './styles.css'
+import './styles.css';
 
 // main component //
 class AverageTooltip extends React.Component{
@@ -11,13 +11,13 @@ class AverageTooltip extends React.Component{
                 <div className="tipAverage-box">
                     <div>{this.props.payload[0].payload.sessionLength} min</div>
                 </div>
-            )
+            );
         } else {
             return (
                 <div></div>
-            )
+            );
         }
-    }
-}
+    };
+};
 
-export default AverageTooltip
+export default AverageTooltip;
