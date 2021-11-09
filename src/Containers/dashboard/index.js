@@ -32,42 +32,45 @@ class Dashboard extends React.Component{
         };
     };
 
+    /**
+     * On component mount user datas are update using API class
+     */
     componentDidMount(){
-        userData.getUser().then((res) =>{
+        userData.getUser().then((response) =>{
             let scoreValue = 0
-            if (res.data.data.score !== undefined) {
+            if (response.data.data.score !== undefined) {
                 scoreValue = [{
                     name: "a",
-                    score: res.data.data.score,
+                    score: response.data.data.score,
                 }];
-            } else if (res.data.data.todayScore !== undefined) {
+            } else if (response.data.data.todayScore !== undefined) {
                 scoreValue = [{
                     name: "a",
-                    score: res.data.data.todayScore,
+                    score: response.data.data.todayScore,
                 }];
             }
             this.setState({
-                firstNameState: res.data.data.userInfos.firstName,
-                keyDataState: res.data.data.keyData,
+                firstNameState: response.data.data.userInfos.firstName,
+                keyDataState: response.data.data.keyData,
                 scoreDataState: scoreValue,
             });
         });
 
-        userData.getActivity().then((res1) =>{
+        userData.getActivity().then((response1) =>{
             this.setState({
-                activityDataState: res1.data.data.sessions,
+                activityDataState: response1.data.data.sessions,
             });
         });
 
-        userData.getAverageSession().then((res2)=>{
+        userData.getAverageSession().then((response2)=>{
             this.setState({
-                averageSessionDataState: res2.data.data.sessions,
+                averageSessionDataState: response2.data.data.sessions,
             });
         });
         
-        userData.getPerfData().then((res3)=>{
+        userData.getPerfData().then((response3)=>{
             this.setState({
-                perfDataState: res3.data.data,
+                perfDataState: response3.data.data,
             });
         });
     };

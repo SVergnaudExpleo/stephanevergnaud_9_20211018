@@ -6,7 +6,7 @@
 
 import axios from "axios"
 
-// usable ID : 12 and 18 //
+// usable ID : 12 or 18 //
 const selectUserId = 12
 const selectApiPort = 3000
 

@@ -6,7 +6,6 @@
  * @version 0.1
  */
 
-// import librairy modules //
 import React from 'react'
 import PropTypes from 'prop-types'
 import {
@@ -19,13 +18,11 @@ import {
     Legend,
     ResponsiveContainer,
 } from "recharts";
-// Import preject component //
 import './styles.css'
 import ActivityLegend from './Legend';
 import ActivityTooltip from './Tooltip';
 import TickActivity from './Tick';
 
-// Main component //
 class ActivityChart extends React.Component{
     render() {
         return (
