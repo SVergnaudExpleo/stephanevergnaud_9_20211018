@@ -7,7 +7,7 @@ import ActivityChart from '../../Components/ActivityChart';
 import StatData from '../StatData';
 
 /**
- * This React component call all the chart and dispatch datas to components from API call
+ * This React component call all the charts and dispatch datas to components from API call
  * 
  * @component
  * @class

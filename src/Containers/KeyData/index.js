@@ -8,7 +8,7 @@ import gluLogo from '../../Assets/apple.svg';
 import lipLogo from '../../Assets/cheeseburger.svg';
 
 /**
- * This React component create a grop of configurated KeyCard
+ * This React component create a group of KeyCard
  * 
  * @component
  * @class

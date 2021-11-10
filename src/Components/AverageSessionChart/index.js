@@ -18,7 +18,7 @@ import AverageLegend from './Legend';
  * 
  * @component
  * @class
- * @param {any} averageDatas React component props
+ * @param {any} averageDatas React component props containing chart datas
  * @author Stéphane
  * @version 1
  */

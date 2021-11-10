@@ -1,16 +1,17 @@
 import axios from "axios"
 
+const selectUserId = 12
+const selectApiPort = 3000
+
 /** 
  * Project API call grouped in a class
  *
- * @param {number} selectUserId User ID in database set the value at 12 or 19 to change user
+ * @class
+ * @param {number} selectUserId User ID in database set the value at 12 or 18 to change user
  * @param {number} selectApiPort Api port configuration if needed
  * @author Stéphane
  * @version 1
  */
-
-const selectUserId = 12
-const selectApiPort = 3000
 
 class UserData {
     getUser(){
