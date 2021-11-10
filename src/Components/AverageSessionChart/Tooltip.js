@@ -1,9 +1,12 @@
-/**
- * Tooltip activated on maouse over for average session chart
- */
-
 import React from 'react';
 import './styles.css';
+
+/**
+ * Tooltip activated on maouse over for average session chart
+ * 
+ * @component
+ * @class
+ */
 
 class AverageTooltip extends React.Component{
     render() {

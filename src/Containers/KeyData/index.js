@@ -1,11 +1,3 @@
-/**
- * This React component create a grop of configurated KeyCard
- * 
- * @param {object} keyDatas React component props set datas
- * @author Stéphane
- * @version 1
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
@@ -14,6 +6,16 @@ import calorieLogo from '../../Assets/calories.svg';
 import protLogo from '../../Assets/proteins.svg';
 import gluLogo from '../../Assets/apple.svg';
 import lipLogo from '../../Assets/cheeseburger.svg';
+
+/**
+ * This React component create a grop of configurated KeyCard
+ * 
+ * @component
+ * @class
+ * @param {object} keyDatas React component props set datas
+ * @author Stéphane
+ * @version 1
+ */
 
 class KeyData extends React.Component{
     render() {

@@ -1,14 +1,15 @@
-/**
- * Header component of the page
- * 
- * @author Stéphane
- * @version 1
- */
-
 import React from 'react';
 import './styles.css';
 import logo from '../../Assets/logo.svg';
 
+/**
+ * Header component of the page
+ *
+ * @component
+ * @class 
+ * @author Stéphane
+ * @version 1
+ */
 class Header extends React.Component{
     render() {
         return (

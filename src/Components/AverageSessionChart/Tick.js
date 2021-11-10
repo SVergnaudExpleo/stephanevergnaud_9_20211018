@@ -1,8 +1,12 @@
-/**
- * Tick for average session chart
- */
 import React from 'react';
 import './styles.css';
+
+/**
+ * Tick for average session chart
+ * 
+ * @component
+ * @class
+ */
 
 class TickAverage extends React.Component{
     render() {

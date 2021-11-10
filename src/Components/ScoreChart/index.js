@@ -1,11 +1,3 @@
-/**
- * This react component show the user daily performance in a cicle chart
- * 
- * @param {array} scoreDatas React component props give chart data
- * @author Stéphane
- * @version 0.1
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -16,6 +8,16 @@ import {
 } from 'recharts';
 import './styles.css';
 import ScoreLegend from './Legend';
+
+/**
+ * This react component show the user daily performance in a cicle chart
+ * 
+ * @component
+ * @class
+ * @param {array} scoreDatas React component props give chart data
+ * @author Stéphane
+ * @version 1
+ */
 
 class ScoreChart extends React.Component{
     render() {

@@ -1,13 +1,16 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import './styles.css';
+
 /**
  * This React component show the user name
  * 
+ * @component
+ * @class
  * @param {string} firstName React component props set user name 
  * @author Stéphane
  * @version 1
  */
-import React from 'react';
-import PropTypes from 'prop-types';
-import './styles.css';
 
 class Name extends React.Component{
     render() {

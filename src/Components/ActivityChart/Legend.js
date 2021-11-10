@@ -1,9 +1,12 @@
-/**
- * Activity chart legend component
- */
-
 import React from 'react';
 import './styles.css';
+
+/**
+ * Activity chart legend component
+ * 
+ * @component
+ * @class
+ */
 
 class ActivityLegend extends React.Component{
     render() {

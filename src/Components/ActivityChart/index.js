@@ -1,11 +1,3 @@
-/**
- * Show average activity of user in a bar chart
- * 
- * @param {array} Datas React component props
- * @author Stéphane
- * @version 1
- */
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import {
@@ -23,6 +15,15 @@ import ActivityLegend from './Legend';
 import ActivityTooltip from './Tooltip';
 import TickActivity from './Tick';
 
+/**
+ * Show average activity of user in a bar chart
+ * 
+ * @component
+ * @class
+ * @param {array} Datas React component props
+ * @author Stéphane
+ * @version 1
+ */
 class ActivityChart extends React.Component{
     render() {
         return (

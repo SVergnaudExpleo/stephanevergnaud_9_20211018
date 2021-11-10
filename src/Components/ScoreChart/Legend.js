@@ -1,9 +1,12 @@
-/**
- * This React component is the legend of score chart
- */
-
 import React from 'react';
 import './styles.css';
+
+/**
+ * This React component is the legend of score chart
+ * 
+ * @component
+ * @class
+ */
 
 class ScoreLegend extends React.Component{
     render() {

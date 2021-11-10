@@ -1,10 +1,3 @@
-/**
- * This React component call all the chart and dispatch datas to components from API call
- * 
- * @author Stéphane
- * @version 1
- */
-
 import React from 'react';
 import './styles.css';
 import Name from '../../Components/Name';
@@ -12,6 +5,15 @@ import userData from '../../ApiCall';
 import KeyData from '../KeyData';
 import ActivityChart from '../../Components/ActivityChart';
 import StatData from '../StatData';
+
+/**
+ * This React component call all the chart and dispatch datas to components from API call
+ * 
+ * @component
+ * @class
+ * @author Stéphane
+ * @version 1
+ */
 
 class Dashboard extends React.Component{
     constructor(props){

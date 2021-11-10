@@ -1,9 +1,12 @@
-/**
- * Tool tip activate on mouse over for activity chart
- */
 import React from 'react';
 import './styles.css';
 
+/**
+ * Tool tip activate on mouse over for activity chart
+ * 
+ * @component
+ * @class
+ */
 class ActivityTooltip extends React.Component{
     render() {
         if (this.props.payload === null) {

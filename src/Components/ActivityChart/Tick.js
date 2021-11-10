@@ -1,10 +1,12 @@
-/**
- * Tick for activity chart
-*/
-
 import React from 'react';
 import './styles.css';
 
+/**
+ * Tick for activity chart
+ * 
+ * @component
+ * @class
+ */
 class TickActivity extends React.Component{
     render() {
         const { x, y, payload } = this.props;

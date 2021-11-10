@@ -1,6 +1,12 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import './styles.css';
+
 /**
  * This React component create a card containing the user key data
- * 
+ *
+ * @component
+ * @class 
  * @param {any} data React component props give data to card
  * @param {string} text React component props configure card text 
  * @param {string} unit React component props Configure the unit of card 
@@ -9,10 +15,6 @@
  * @author Stéphane
  * @version 1
  */
-
-import React from 'react';
-import PropTypes from 'prop-types';
-import './styles.css';
 
 class KeyCard extends React.Component{   
     render() {

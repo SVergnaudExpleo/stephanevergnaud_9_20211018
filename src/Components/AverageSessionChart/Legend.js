@@ -1,9 +1,12 @@
-/**
- * Legent of average session chart
- */
 import React from 'react';
 import './styles.css';
 
+/**
+ * Legent of average session chart
+ * 
+ * @component
+ * @class
+ */
 class AverageLegend extends React.Component{
     render() {
         return (

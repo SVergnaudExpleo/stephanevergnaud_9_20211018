@@ -1,19 +1,17 @@
-/** 
-* Project API call grouped in a class
-*
-* @param {number} selectUserId User ID in database
-* @param {number} selectApiPort Api port configuration if needed
-* @author Stéphane
-* @version 1
-*/
-
 import axios from "axios"
 
-// usable ID : 12 or 18 //
+/** 
+ * Project API call grouped in a class
+ *
+ * @param {number} selectUserId User ID in database set the value at 12 or 19 to change user
+ * @param {number} selectApiPort Api port configuration if needed
+ * @author Stéphane
+ * @version 1
+ */
+
 const selectUserId = 12
 const selectApiPort = 3000
 
-// Make a request for a user with a given ID //
 class UserData {
     getUser(){
         return axios.get(`http://localhost:${selectApiPort}/user/${selectUserId}`)

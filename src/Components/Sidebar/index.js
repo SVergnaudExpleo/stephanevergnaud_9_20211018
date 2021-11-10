@@ -1,16 +1,18 @@
-/**
- * This React component show a side bar on the left of page
- * 
- * @author Stéphane
- * @version 1
- */
-
 import React from 'react';
 import './styles.css';
 import yoga from '../../Assets/yoga.svg';
 import swim from '../../Assets/swiming.svg';
 import cycle from '../../Assets/cycling.svg';
 import strength from '../../Assets/strength.svg';
+
+/**
+ * This React component show a side bar on the left of page
+ *
+ * @component
+ * @class 
+ * @author Stéphane
+ * @version 1
+ */
 
 class Sidebar extends React.Component{
     render() {

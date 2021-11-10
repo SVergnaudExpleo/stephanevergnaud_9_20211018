@@ -1,11 +1,3 @@
-/**
- * This React component show the user performance in a radar chart
- * 
- * @param {object} perfDatas React component props set datas 
- * @author Stéphane
- * @version 1
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -16,6 +8,16 @@ import {
     ResponsiveContainer,
   } from "recharts";
 import './styles.css';
+
+/**
+ * This React component show the user performance in a radar chart
+ * 
+ * @component
+ * @class
+ * @param {object} perfDatas React component props set datas of perf chart
+ * @author Stéphane
+ * @version 1
+ */
 
 class PerfChart extends React.Component{
     render() {

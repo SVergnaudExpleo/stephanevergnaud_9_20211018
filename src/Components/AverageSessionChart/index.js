@@ -1,12 +1,3 @@
-/**
- * Show user average session length in an area chart
- * 
- * @param {any} averageDatas React component props
- * @author Stéphane
- * @version 1
- */
-
-// import librairy modules //
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -17,13 +8,21 @@ import {
     Legend,
 } from "recharts";
 import { ResponsiveContainer } from 'recharts/lib/component/ResponsiveContainer';
-// Import project component //
 import './styles.css';
 import TickAverage from './Tick';
 import AverageTooltip from './Tooltip';
 import AverageLegend from './Legend';
 
-// Main component //
+/**
+ * Show user average session length in an area chart
+ * 
+ * @component
+ * @class
+ * @param {any} averageDatas React component props
+ * @author Stéphane
+ * @version 1
+ */
+
 class AverageSessionChart extends React.Component{
     render() {
         return (
