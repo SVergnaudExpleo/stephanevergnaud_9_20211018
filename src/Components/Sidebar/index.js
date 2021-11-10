@@ -1,9 +1,8 @@
 /**
  * This React component show a side bar on the left of page
  * 
- * @param no params needed
  * @author Stéphane
- * @version 0.1
+ * @version 1
  */
 
 import React from 'react';

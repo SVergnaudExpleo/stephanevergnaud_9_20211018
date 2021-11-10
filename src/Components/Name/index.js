@@ -1,9 +1,9 @@
 /**
  * This React component show the user name
  * 
- * @param this React component need firstName props as string
+ * @param {string} firstName React component props set user name 
  * @author Stéphane
- * @version 0.1
+ * @version 1
  */
 import React from 'react';
 import PropTypes from 'prop-types';

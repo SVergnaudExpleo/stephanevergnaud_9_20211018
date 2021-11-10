@@ -1,9 +1,8 @@
 /**
  * Header component of the page
  * 
- * @param no param needed
  * @author Stéphane
- * @version 0.1
+ * @version 1
  */
 
 import React from 'react';

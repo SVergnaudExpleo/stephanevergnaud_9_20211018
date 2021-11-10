@@ -1,13 +1,13 @@
 /**
  * This React component create a card containing the user key data
  * 
- * @param This React component need data as props
- * @param This React component need text props as string
- * @param This React component need unit props as string
- * @param This React component need logo props as string
- * @param This React component need bgColor props as string
+ * @param {any} data React component props give data to card
+ * @param {string} text React component props configure card text 
+ * @param {string} unit React component props Configure the unit of card 
+ * @param {string} logo React component props give the card logo
+ * @param {string} bgColor React component props configure the backgrond color of logo 
  * @author Stéphane
- * @version 0.1
+ * @version 1
  */
 
 import React from 'react';

@@ -1,8 +1,5 @@
 /**
  * This React component is the legend of score chart
- * 
- * @author Stéphane
- * @version 0.1
  */
 
 import React from 'react';

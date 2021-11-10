@@ -2,7 +2,7 @@
  * Main page for the project
  * 
  * @author Stéphane
- * @version 0.1
+ * @version 1
  */
 import React from 'react';
 import ReactDOM from 'react-dom';

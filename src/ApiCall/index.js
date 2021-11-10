@@ -1,7 +1,10 @@
 /** 
-*   Project API call
-*   @author Stéphane
-*   @version 0.1
+* Project API call grouped in a class
+*
+* @param {number} selectUserId User ID in database
+* @param {number} selectApiPort Api port configuration if needed
+* @author Stéphane
+* @version 1
 */
 
 import axios from "axios"

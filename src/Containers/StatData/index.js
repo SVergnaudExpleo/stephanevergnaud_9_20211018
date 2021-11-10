@@ -1,11 +1,11 @@
 /**
  * This React component group 3 small charts for better layout customization
  * 
- * @param This React component need averageDatas props as array
- * @param This React component need perfDatas props as object
- * @param This React component need scoreDatas props as array
+ * @param {array} averageDatas React component props datas for average session chart
+ * @param {object} perfDatas React component props datas for performance chart
+ * @param {array} scoreDatas React component props datas for scorechart
  * @author Stéphane
- * @version 0.1
+ * @version 1
  */
 
 import React from 'react';

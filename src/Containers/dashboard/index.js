@@ -1,9 +1,8 @@
 /**
- * This React component call all the chart and give  datas to components from API call
+ * This React component call all the chart and dispatch datas to components from API call
  * 
- * @param Dispatch datas from API call to the chart
  * @author Stéphane
- * @version 0.1
+ * @version 1
  */
 
 import React from 'react';

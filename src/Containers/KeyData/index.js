@@ -1,9 +1,9 @@
 /**
  * This React component create a grop of configurated KeyCard
  * 
- * @param This React component need keyDatas props as object
+ * @param {object} keyDatas React component props set datas
  * @author Stéphane
- * @version 0.1
+ * @version 1
  */
 
 import React from 'react';

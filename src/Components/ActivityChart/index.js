@@ -1,9 +1,9 @@
 /**
  * Show average activity of user in a bar chart
  * 
- * @param This React component need Datas props as array
+ * @param {array} Datas React component props
  * @author Stéphane
- * @version 0.1
+ * @version 1
  */
 
 import React from 'react'

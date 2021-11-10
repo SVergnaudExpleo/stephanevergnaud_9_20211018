@@ -1,9 +1,9 @@
 /**
  * Show user average session length in an area chart
  * 
- * @param this React component need averageDatas as props
+ * @param {any} averageDatas React component props
  * @author Stéphane
- * @version 0.1
+ * @version 1
  */
 
 // import librairy modules //

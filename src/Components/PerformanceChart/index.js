@@ -1,9 +1,9 @@
 /**
  * This React component show the user performance in a radar chart
  * 
- * @param this React component need perfDatas props as array
+ * @param {object} perfDatas React component props set datas 
  * @author Stéphane
- * @version 0.1
+ * @version 1
  */
 
 import React from 'react';

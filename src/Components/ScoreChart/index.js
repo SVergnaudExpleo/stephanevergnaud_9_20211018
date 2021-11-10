@@ -1,7 +1,7 @@
 /**
  * This react component show the user daily performance in a cicle chart
  * 
- * @param This React component need scoreDatas props as array
+ * @param {array} scoreDatas React component props give chart data
  * @author Stéphane
  * @version 0.1
  */
